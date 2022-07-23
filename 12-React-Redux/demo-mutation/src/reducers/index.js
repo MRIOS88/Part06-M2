@@ -25,10 +25,10 @@ export default (state = initialState, action) => {
         count: 0,
       }
     case 'ADD_FRIEND':
-      state.amigos.push("Tito");
+      state.amigos.push("Tito");// esto está mal, eliminar esta linea   digo yo
       return {
         ...state,
-        amigos: state.amigos
+        amigos: state.amigos //debería ser amigos: [...state.amigos, "Tito"]   digo yo
       };
     default:
       return {...state}

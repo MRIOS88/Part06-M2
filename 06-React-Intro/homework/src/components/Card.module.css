@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background-color: #B4E197;
+    border: 2px solid gray; /*ancho, tipó de borde, color*/
+    border-radius: 10px;
+}
+/*preguntar por el display block inline*/
+.info {
+    display: flex; /*ya por default el flex-direction esta en row*/
+    align-items: center;
+    justify-content: space-around;
+}
+/*btn se ve afectado por el div de card q tiene flex-direction: column, por eso align-self*/
+ .btn {
+     background-color: #83BD75;
+     width:30px;
+     align-self:flex-end;
+     border-radius: 6px;
+     margin: 5px;
+ }
+
+ .colorWhite {
+     color: white;
+ }
+
+ .btn:hover {
+     color: black;
+     background-color: aliceblue;
+ }
+/*
+NOTA 1:
+en flex-direction: row  ---> justify-content: eje x (de izq a derecha)
+                             align-items: eje y (de arriba a abajo)
+
+                   column---> invierte los ejes.
+NOTA 2:
+para meter más de una clase en un tag, <tag className={`${nombreDimportacion.nombreDclase}${nameImport.otraClase}`}
+*/

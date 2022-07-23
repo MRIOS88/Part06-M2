@@ -1,0 +1,4 @@
+.Container {
+    display: flex; /*por defecto el flex-direction esta en row*/
+    justify-content:space-around;
+}
